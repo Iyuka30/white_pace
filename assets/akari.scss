@@ -33,6 +33,7 @@ h2 {
 
     h2 {
         color: #FFFFFF;
+        white-space: nowrap;
     }
 
     img {
@@ -43,27 +44,25 @@ h2 {
     }
 
     .your_work_text {
-
         span {
             background-color: rgba(37, 182, 235, 0.433);
+
+            &::before{
+                background-image: url();
+            }
         }
     }
 
-}
-
-
-
-
-.text {
-    font-size: 18px;
-    color: #FFFFFF;
 }
 
 .your_work_text {
     text-align: center;
 
     .text {
-        padding: 20px 60px;
+        padding: 20px 0px;
+        font-size: 18px;
+        color: #FFFFFF;
+        align-self: stretch;
     }
 
 
@@ -81,6 +80,7 @@ h2 {
     &:hover {
         opacity: 0.7;
     }
+
     a {
         color: #FFFFFF;
         text-decoration: none;
@@ -96,19 +96,19 @@ h2 {
     align-items: center;
     height: 661px;
 
-    .your_date_textbox{
+    .your_date_textbox {
         align-items: flex-start;
 
-        .img_wrappe{
+        .img_wrappe {
             width: 100%;
         }
     }
 
-    h2{
+    h2 {
         font-size: 72px;
     }
 
-    p{
+    p {
         font-size: 18px;
     }
 }
@@ -134,13 +134,16 @@ h2 {
         justify-content: space-around;
         align-items: center;
         height: 750px;
-        .img_wrappe{
+
+        .img_wrappe {
             width: 100%;
         }
     }
 
-    .apps_textbox{
-        h2,p{
+    .apps_textbox {
+
+        h2,
+        p {
             color: #FFFFFF;
         }
     }
@@ -149,19 +152,85 @@ h2 {
 
 // slider
 
-.clients_says{
-    h2{
+.clients_says {
+    h2 {
         text-align: center;
     }
 
-    ul{
+    ul {
         display: flex;
         justify-content: space-between;
 
-        li{background-color: #4F9CF9;
-    }
+        li {
+            background-color: #4F9CF9;
+        }
 
     }
 
 }
 
+// tyr whitepace
+
+.trywhite {
+    background-color: #043873;
+
+    .trywhite_text {
+        text-align: center;
+
+        h2 {
+            color: #FFFFFF;
+            font-size: 72px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+
+        img {
+            gap: 40px
+        }
+    }
+
+    .appicon {
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+
+    }
+}
+
+.content_footer {
+    display: flex;
+    margin-top: 140px;
+    gap: 100px;
+
+    h4 {
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 30px;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+}
