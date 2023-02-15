@@ -1,1 +1,81 @@
+<<<<<<< HEAD
+=======
+/* 全体に */
+body {
+  border: 1px solid black;
+  max-width: 1921px;
+  font-family: sans-serif;
+  margin: 0 auto;
+  background-color: #043873;
+}
+
+.wrapper{
+  width: 77%;
+}
+
+/* ヘッダー */
+.header,
+.header-right ul,
+.header-right,
+.header-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header{
+  margin: 0 auto;
+  height: 92px;
+  align-items: center;
+  color: white;
+}
+.header-left{
+  width: 28px;
+}
+.header-text{
+  color: white;
+  font-size: 15px;
+  margin-left: 32px;
+}
+.header-right i{
+  margin-left: 10px;
+
+}
+li{
+  list-style: none;
+}
+.login-btn{
+  width: 126px;
+  height: 60px;
+  color: #043873;
+  background-color: #FFE492;
+  border: none;
+  padding: 0px;
+  border-radius: 8px;
+  margin-left: 60px;
+}
+.login-btn a{
+  color: #043873;
+  border-radius: 8px;
+  padding: 16px 40px;
+  
+}
+.tryWhitepace-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 227px;
+  height: 60px;
+  color: white;
+  background-color: #4F9CF9;
+  border: none;
+  padding: 0px;
+  border-radius: 8px;
+  margin-left: 24px;
+}
+
+
+
+
+
+>>>>>>> 2d9458d8042cf6a4fb98a591b0f03694323d4df4
 /*# sourceMappingURL=yuka.css.map */
