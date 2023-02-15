@@ -75,6 +75,18 @@ h2 {
   align-items: center;
   height: 661px;
 }
+.your_date .your_date_textbox {
+  align-items: flex-start;
+}
+.your_date .your_date_textbox .img_wrappe {
+  width: 100%;
+}
+.your_date h2 {
+  font-size: 72px;
+}
+.your_date p {
+  font-size: 18px;
+}
 
 .Oursponsors {
   height: 538px;
@@ -87,13 +99,29 @@ h2 {
 }
 
 .apps {
+  background-color: #043873;
+  height: 750px;
+}
+.apps .apps_using {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  height: 750px;
+}
+.apps .apps_using .img_wrappe {
+  width: 100%;
+}
+.apps .apps_textbox h2, .apps .apps_textbox p {
+  color: #FFFFFF;
+}
+
+.clients_says h2 {
+  text-align: center;
+}
+.clients_says ul {
+  display: flex;
   justify-content: space-between;
 }
-.apps div {
-  width: 50%;
-}
-.apps .apps_textbox {
-  width: 40%;
+.clients_says ul li {
+  background-color: #4F9CF9;
 }/*# sourceMappingURL=akari.css.map */
