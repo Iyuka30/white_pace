@@ -1,50 +1,120 @@
-
 // 共通の設定
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
     border: 1px solid black;
     max-width: 1921px;
-    font-family:sans-serif;
+    font-family: sans-serif;
     margin: 0 auto;
-    background-color: #043873;
-    
 }
 
-.wrapper{
-    width: 77%;
-    // margin: 0 auto;
-}
-
-h2{
+h2 {
+    font-weight: 700;
     font-size: 72px;
-    color: #FFFFFF;
+    letter-spacing: -0.02em;
 }
 
-.blue{
-    // background-color: #043873;
+.wrapper {
+    width: 77%;
+    margin: 0 auto;
 }
 
-.text{
+.your_work {
+    display: flex;
+    align-items: center;
+    background-color: #043873;
+    height: 574px;
+    position: relative;
+
+    h2 {
+        color: #FFFFFF;
+    }
+
+    img {
+        position: absolute;
+        width: 38%;
+        top: -181px;
+        left: -111px;
+    }
+
+    .your_work_text {
+
+        span {
+            background-color: rgba(37, 182, 235, 0.433);
+        }
+    }
+
+}
+
+
+
+
+.text {
     font-size: 18px;
     color: #FFFFFF;
 }
 
-.your_work{
+.your_work_text {
     text-align: center;
+
+    .text {
+        padding: 20px 60px;
+    }
+
 
 }
 
-.btn{
+.btn {
     background-color: #4F9CF9;
     width: 195px;
     height: 63px;
-    border-radius: 8%;
-    &:hover{
+    line-height: 63px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+
+    &:hover {
         opacity: 0.7;
     }
-    a{
+
+    a {
         color: #FFFFFF;
         text-decoration: none;
     }
 
+}
+
+.your_date {
+    display: flex;
+    align-items: center;
+    height: 661px;
+}
+
+.Oursponsors {
+    height: 538px;
+    text-align: center;
+
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+}
+
+.apps {
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    div{
+            width: 50%;
+    }
+    .apps_textbox{
+        width: 40%;
+    }
 }
