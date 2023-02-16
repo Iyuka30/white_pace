@@ -87,6 +87,24 @@ section {
   text-decoration: none;
 }
 
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  background-image: url(../../img/yellowline.png);
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: -1;
+  top: 65px;
+  width: 50%;
+  height: 60%;
+  background-repeat: no-repeat;
+  right: 80px;
+}
+
 .your_date {
   display: flex;
   align-items: center;
