@@ -3,11 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid black;
 }
 
 body {
 
-    border: 1px solid black;
+
     max-width: 1921px;
     font-family: sans-serif;
     margin: 0 auto;
@@ -35,25 +36,6 @@ h2 {
         color: #FFFFFF;
         // white-space: nowrap;
         position: relative;
-
-        span {
-            background-image: url(../img/blueline.png);
-        }
-
-
-
-
-        &::before {
-
-
-            position: absolute;
-            content: url(../img/blueline.png);
-            display: inline-block;
-            background-size: contain;
-            vertical-align: middle;
-
-        }
-
     }
 
     img {
@@ -123,17 +105,54 @@ h2 {
     }
 }
 
+// Oursponsors =====================================================
+
 .Oursponsors {
     height: 538px;
-    text-align: center;
+    background-image:image-url("Linkedin.png");
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
 
+    .sponsor {
+        position: relative;
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 100px;
+        &::before {
+            content: '';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
     }
+
+    // span {
+    //     position: absolute;
+    //     background-image: url(../img/yellowline.png);
+    // }
+
+
+
+    // .lineimg {
+    //     position: absolute;
+    //     right: 165px;
+    //     position: absolute;
+    //     top: 64px;
+    //     z-index: -1;
+    // }
+
 }
+
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
 
 .apps {
     background-color: #043873;
