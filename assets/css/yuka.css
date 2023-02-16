@@ -71,6 +71,61 @@ li{
   margin-left: 24px;
 }
 
+/* メイン */
+.Get-More-Done,
+.Project-Management,
+.Use-as-Extension{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.Work-together,
+.Customise-it-to-your-needs{
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  
+}
+
+/* GetMoreDone */
+.GetMoreDone{
+  
+}
+.Get-More-Done-text h2{
+  font-size: 64px;
+}
+.GetMoreDone img{
+  width: 954px;
+  height: 600px; 
+}
+
+/* Project-Management ② */
+.Project-Management-text h2{
+  font-size: 72px;
+}
+.Project-Management-img{
+  width: 748px;
+  height: 547px;
+}
+
+/* Work-together */
+.Work-together-text h2{
+  font-size: 72px;
+}
+.Work-together-img{
+  width: 710px;
+  height: 661px;
+}
+
+/* Use-as-Extension */
+.Use-as-Extension-text h2{
+  font-size: 72px;
+}
+.Use-as-Extension-img{
+  width: 686px;
+  height: 479px;
+
+}
 
 
 
