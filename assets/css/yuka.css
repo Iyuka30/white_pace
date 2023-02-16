@@ -1,16 +1,18 @@
-<<<<<<< HEAD
-=======
 /* 全体に */
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   max-width: 1921px;
   font-family: sans-serif;
-  margin: 0 auto;
   background-color: #043873;
 }
 
 .wrapper{
   width: 77%;
+  margin: 0 auto;
 }
 
 /* ヘッダー */
@@ -74,63 +76,81 @@ li{
 }
 
 /* メイン */
-.Get-More-Done,
-.Project-Management,
-.Use-as-Extension{
+.get-more-done,
+.project-management,
+.use-as-extension{
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.Work-together,
-.Customise-it-to-your-needs{
+.work-together,
+.your-needs{
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
-  
 }
 
-/* GetMoreDone */
-.GetMoreDone{
-  
+.get_more,
+.project,
+.extension,
+.needs{
+  padding: 140px 0 140px;
 }
-.Get-More-Done-text h2{
+
+
+
+/* get more done */
+.get-more-done-text h2{
   font-size: 64px;
 }
-.GetMoreDone img{
+.get-more-done img{
   width: 954px;
   height: 600px; 
 }
 
-/* Project-Management ② */
-.Project-Management-text h2{
+/* project-management */
+.project{
+  background-color: white;
+}
+.project-management-text h2{
   font-size: 72px;
 }
-.Project-Management-img{
+.project-management-img{
   width: 748px;
   height: 547px;
 }
 
-/* Work-together */
-.Work-together-text h2{
+/* work together */
+.work-together-text h2{
   font-size: 72px;
 }
-.Work-together-img{
+.work-together-img{
   width: 710px;
   height: 661px;
 }
 
-/* Use-as-Extension */
-.Use-as-Extension-text h2{
+/* use as extension */
+.use-as-extension-text h2{
   font-size: 72px;
 }
-.Use-as-Extension-img{
+.use-as-extension-img{
   width: 686px;
   height: 479px;
 
 }
 
 
+/* Customise it to your needs */
+.needs{
+  background-color: white;
+}
 
+/* Choose Your Plan */
+.your-plan-box{
+  display: flex;
+}
+.your-plan-box li{
+  display: flex;
+}
 
->>>>>>> 2d9458d8042cf6a4fb98a591b0f03694323d4df4
 /*# sourceMappingURL=yuka.css.map */
