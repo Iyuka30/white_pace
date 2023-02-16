@@ -33,7 +33,27 @@ h2 {
 
     h2 {
         color: #FFFFFF;
-        white-space: nowrap;
+        // white-space: nowrap;
+        position: relative;
+
+        span {
+            background-image: url(../img/blueline.png);
+        }
+
+
+
+
+        &::before {
+
+
+            position: absolute;
+            content: url(../img/blueline.png);
+            display: inline-block;
+            background-size: contain;
+            vertical-align: middle;
+
+        }
+
     }
 
     img {
@@ -41,16 +61,6 @@ h2 {
         width: 38%;
         top: -181px;
         left: -111px;
-    }
-
-    .your_work_text {
-        span {
-            background-color: rgba(37, 182, 235, 0.433);
-
-            &::before{
-                background-image: url();
-            }
-        }
     }
 
 }

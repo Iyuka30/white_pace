@@ -30,19 +30,23 @@ h2 {
 }
 .your_work h2 {
   color: #FFFFFF;
-  white-space: nowrap;
+  position: relative;
+}
+.your_work h2 span {
+  background-image: url(../img/blueline.png);
+}
+.your_work h2::before {
+  position: absolute;
+  content: url(../img/blueline.png);
+  display: inline-block;
+  background-size: contain;
+  vertical-align: middle;
 }
 .your_work img {
   position: absolute;
   width: 38%;
   top: -181px;
   left: -111px;
-}
-.your_work .your_work_text span {
-  background-color: rgba(37, 182, 235, 0.433);
-}
-.your_work .your_work_text span::before {
-  background-image: url();
 }
 
 .your_work_text {
