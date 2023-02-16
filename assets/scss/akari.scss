@@ -3,11 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid black;
 }
 
 body {
 
-    border: 1px solid black;
+
     max-width: 1921px;
     font-family: sans-serif;
     margin: 0 auto;
@@ -24,8 +25,15 @@ h2 {
     margin: 0 auto;
 }
 
+section {
+    padding-top: 140px;
+}
+
+// your work=================================-
+
 .your_work {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #043873;
     height: 574px;
@@ -34,6 +42,7 @@ h2 {
     h2 {
         color: #FFFFFF;
         white-space: nowrap;
+        // position: relative;
     }
 
     img {
@@ -41,16 +50,6 @@ h2 {
         width: 38%;
         top: -181px;
         left: -111px;
-    }
-
-    .your_work_text {
-        span {
-            background-color: rgba(37, 182, 235, 0.433);
-
-            &::before{
-                background-image: url();
-            }
-        }
     }
 
 }
@@ -67,6 +66,8 @@ h2 {
 
 
 }
+
+// btn ======================================
 
 .btn {
     background-color: #4F9CF9;
@@ -85,11 +86,31 @@ h2 {
         color: #FFFFFF;
         text-decoration: none;
     }
+}
 
+.btn_read {
+    background-color: #4F9CF9;
+    width: 197px;
+    height: 63px;
+    line-height: 63px;
+    border-radius: 8px;
+    text-align: center;
+
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 }
 
 
-// youedate
+
+
+// youedate=================================
 
 .your_date {
     display: flex;
@@ -97,15 +118,30 @@ h2 {
     height: 661px;
 
     .your_date_textbox {
-        align-items: flex-start;
 
         .img_wrappe {
             width: 100%;
         }
     }
 
-    h2 {
+    .yourdate{
         font-size: 72px;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url(../../img/yellowline.png);
+            background-size: contain;
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: -1;
+            top: 65px;
+            width: 50%;
+            height: 60%;
+            background-repeat: no-repeat;
+            right: 80px;
+        }
     }
 
     p {
@@ -113,17 +149,57 @@ h2 {
     }
 }
 
+// Oursponsors =====================================================
+
 .Oursponsors {
     height: 538px;
     text-align: center;
 
+    .sponsor {
+        position: relative;
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 100px;
+        &::before {
+            content: "";
+            background-image: url(../../img/yellowline.png);
+            background-size: contain;
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: -1;
+            top: 65px;
+            width: 50%;
+            height: 60%;
+            background-repeat: no-repeat;
+            right: 80px;
+        }
+
     }
+
+    // span {
+    //     position: absolute;
+    //     background-image: url(../img/yellowline.png);
+    // }
+
+
+
+    // .lineimg {
+    //     position: absolute;
+    //     right: 165px;
+    //     position: absolute;
+    //     top: 64px;
+    //     z-index: -1;
+    // }
+
 }
+
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
 
 .apps {
     background-color: #043873;

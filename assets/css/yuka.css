@@ -40,7 +40,6 @@ body {
 }
 .header-right i{
   margin-left: 10px;
-
 }
 li{
   list-style: none;
@@ -136,7 +135,6 @@ li{
 .use-as-extension-img{
   width: 686px;
   height: 479px;
-
 }
 
 
@@ -152,5 +150,3 @@ li{
 .your-plan-box li{
   display: flex;
 }
-
-/*# sourceMappingURL=yuka.css.map */
