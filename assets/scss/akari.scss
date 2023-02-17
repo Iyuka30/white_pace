@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    // border: 1px solid black;
 }
 
 body {
@@ -26,7 +26,10 @@ h2 {
 }
 
 section {
-    padding-top: 140px;
+    padding: 140px 0px 140px;
+    &:nth-of-type(6){
+        padding-bottom: 32px;
+    }
 }
 
 // your work=================================-
@@ -38,12 +41,6 @@ section {
     background-color: #043873;
     height: 574px;
     position: relative;
-
-    h2 {
-        color: #FFFFFF;
-        white-space: nowrap;
-        // position: relative;
-    }
 
     img {
         position: absolute;
@@ -107,6 +104,58 @@ section {
     }
 }
 
+// underline===============================
+
+.underline {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-image: url(../../img/yellowline.png);
+        background-size: contain;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: -1;
+        top: 65px;
+        width: 50%;
+        height: 60%;
+        background-repeat: no-repeat;
+        right: 80px;
+    }
+}
+
+.underlineb {
+    position: relative;
+    white-space: nowrap;
+    color: #FFFFFF;
+    // position: relative;
+
+    &::before {
+
+        content: "";
+        background-image: url(../../img/blueline.png);
+        background-size: contain;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: 0;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        top: 65px;
+        width: 50%;
+        height: 60%;
+        background-repeat: no-repeat;
+        right: 80px;
+
+
+
+    }
+
+}
+
+
 
 
 
@@ -124,7 +173,7 @@ section {
         }
     }
 
-    .yourdate{
+    .yourdate {
         font-size: 72px;
         position: relative;
 
@@ -201,6 +250,9 @@ ul {
 }
 
 
+// Work with Your Favorite Apps Using whitepace
+
+
 .apps {
     background-color: #043873;
     height: 750px;
@@ -209,7 +261,7 @@ ul {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 750px;
+        gap: 100px;
 
         .img_wrappe {
             width: 100%;
@@ -236,9 +288,49 @@ ul {
     ul {
         display: flex;
         justify-content: space-between;
+        gap: 32px;
+
+        .hitoue {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 0px 40px;
+            gap: 32px;
+            border-bottom: 1px solid #FFFFFF;
+
+
+            &:nth-of-type(1) {
+                border-bottom: 1px solid black;
+            }
+        }
+
+        .hitocard {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            margin-top: 60px;
+
+            .hitoname h3 {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
 
         li {
             background-color: #4F9CF9;
+            padding: 60px 40px;
+            border-radius: 10px;
+            gap: 32px;
+
+            &:nth-of-type(1) {
+                color: black;
+                background-color: #FFFFFF;
+
+
+                box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+
+            }
         }
 
     }
@@ -250,8 +342,18 @@ ul {
 .trywhite {
     background-color: #043873;
 
+
     .trywhite_text {
         text-align: center;
+        gap: 40px;
+        display: grid;
+        padding-bottom: 140px;
+
+        .iconimg {
+            gap: 40px;
+            display: flex;
+            justify-content: center;
+        }
 
         h2 {
             color: #FFFFFF;
@@ -279,8 +381,15 @@ ul {
 
 .content_footer {
     display: flex;
-    margin-top: 140px;
+    flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
     gap: 100px;
+
+    .contentbox ul{
+        display: flex;
+    }
 
     h4 {
         color: #FFFFFF;
@@ -298,10 +407,11 @@ ul {
 .footer {
     display: flex;
     justify-content: space-between;
-    margin: 30px auto 30px;
+    align-items: flex-end;
 
     ul {
         display: flex;
+        gap: 60px;
     }
 
     li {
