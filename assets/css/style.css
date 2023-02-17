@@ -17,9 +17,10 @@ body {
 
 
 
-/* ゆか */
+/* ========== ゆか ========== */
 
-/* ヘッダー */
+
+/* ===== ヘッダー ===== */
 .header,
 .header-right ul,
 .header-right,
@@ -34,20 +35,24 @@ body {
   align-items: center;
   color: white;
 }
+/* === ヘッダーレフト === */
 .header-left{
   width: 28px;
 }
 .header-text{
   color: white;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 32px;
 }
+/* === ヘッダーライト === */
 .header-right i{
   margin-left: 10px;
 }
 li{
   list-style: none;
 }
+/* === ヘッダーボタン === */
+/* ログイン */
 .login-btn{
   width: 126px;
   height: 60px;
@@ -64,12 +69,13 @@ li{
   padding: 16px 40px;
   
 }
+/* トライ */
 .tryWhitepace-btn{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 227px;
-  height: 60px;
+  /* width: 227px;
+  height: 60px; */
   color: white;
   background-color: #4F9CF9;
   border: none;
@@ -77,8 +83,10 @@ li{
   border-radius: 8px;
   margin-left: 24px;
 }
+/* ===== ヘッダーここまで ====== */
 
 /* メイン */
+
 .get-more-done,
 .project-management,
 .use-as-extension{
@@ -86,6 +94,7 @@ li{
   justify-content: center;
   text-align: center;
 }
+
 .work-together,
 .your-needs{
   display: flex;
@@ -100,9 +109,16 @@ li{
   padding: 140px 0 140px;
 }
 
+.get-more-done,
+.project-management,
+.work-together,
+.use-as-extension,
+.your-needs{
+  align-items: center;
+}
 
 
-/* get more done */
+/* ===== get more done ===== */
 .get-more-done-text h2{
   font-size: 64px;
 }
@@ -111,7 +127,7 @@ li{
   height: 600px; 
 }
 
-/* project-management */
+/* ===== project-management ===== */
 .project{
   background-color: white;
 }
