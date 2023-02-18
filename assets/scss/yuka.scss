@@ -230,27 +230,28 @@ h2 {
 /* === use as extension === */
 .extension{
   background-color: #043873;
-}
-.use-as-extension-text{
-  text-align: left;
-}
-.use-as-extension-text h2{
-  font-size: 72px;
-  color: #FFFFFF;
-
-}
-.use-as-extension-text p{
-  font-size: 18px;
-  margin-top: 24px;
-  color: #FFFFFF;
-}
-.use-as-extension-btn{
-  background-color: #4F9CF9;
-  border: none;
-  padding: 20px 40px;
-  border-radius: 6px;
-  font-size: 18px;
-  margin-top: 60px;
+  .use-as-extension-text{
+    text-align: left;
+    h2{
+      font-size: 72px;
+      color: #FFFFFF;
+    }
+    p{
+      font-size: 18px;
+      margin-top: 24px;
+      color: #FFFFFF;
+    }
+  }
+  .use-as-extension-btn{
+    background-color: #4F9CF9;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-top: 60px;
+  }
+  
+  
 }
 .use-as-extension-btn a,
 .use-as-extension-btn i{

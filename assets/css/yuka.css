@@ -224,23 +224,19 @@ h2 {
 .extension {
   background-color: #043873;
 }
-
-.use-as-extension-text {
+.extension .use-as-extension-text {
   text-align: left;
 }
-
-.use-as-extension-text h2 {
+.extension .use-as-extension-text h2 {
   font-size: 72px;
   color: #FFFFFF;
 }
-
-.use-as-extension-text p {
+.extension .use-as-extension-text p {
   font-size: 18px;
   margin-top: 24px;
   color: #FFFFFF;
 }
-
-.use-as-extension-btn {
+.extension .use-as-extension-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
