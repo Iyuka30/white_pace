@@ -27,14 +27,15 @@ h2 {
 
 section {
     padding: 140px 0px 140px;
-    &:nth-of-type(6){
+
+    &:nth-of-type(6) {
         padding-bottom: 32px;
     }
 }
 
 // your work=================================-
 
-.your_work {
+.your-work {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +52,7 @@ section {
 
 }
 
-.your_work_text {
+.your-work-text {
     text-align: center;
 
     .text {
@@ -85,7 +86,7 @@ section {
     }
 }
 
-.btn_read {
+.btn-read {
     background-color: #4F9CF9;
     width: 197px;
     height: 63px;
@@ -161,42 +162,31 @@ section {
 
 // youedate=================================
 
-.your_date {
+.your-date {
     display: flex;
     align-items: center;
     height: 661px;
 
-    .your_date_textbox {
+    .your-date-textbox {
+        width: 50%;
 
-        .img_wrappe {
-            width: 100%;
-        }
-    }
-
-    .yourdate {
-        font-size: 72px;
-        position: relative;
-
-        &::before {
-            content: "";
-            background-image: url(../../img/yellowline.png);
-            background-size: contain;
-            position: absolute;
-            display: inline-block;
-            vertical-align: middle;
-            z-index: -1;
-            top: 65px;
+        .img-wrappe {
             width: 50%;
-            height: 60%;
-            background-repeat: no-repeat;
-            right: 80px;
+
         }
+
     }
 
-    p {
-        font-size: 18px;
-    }
+
+
+
 }
+
+
+p {
+    font-size: 18px;
+}
+
 
 // Oursponsors =====================================================
 
@@ -255,24 +245,26 @@ ul {
 
 .apps {
     background-color: #043873;
-    height: 750px;
 
-    .apps_using {
+
+    .apps-using {
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 100px;
 
-        .img_wrappe {
-            width: 100%;
+        .img-wrappe {
+            width: 50%;
         }
     }
 
-    .apps_textbox {
+    .apps-textbox {
+        width: 50%;
 
         h2,
         p {
             color: #FFFFFF;
+            letter-spacing: -0.02em;
         }
     }
 }
@@ -280,15 +272,31 @@ ul {
 
 // slider
 
-.clients_says {
+.clients-says {
     h2 {
         text-align: center;
     }
 
-    ul {
+
+    .clients-card ul {
         display: flex;
         justify-content: space-between;
         gap: 32px;
+
+        li {
+            background-color: #4F9CF9;
+            padding: 60px 40px;
+            border-radius: 10px;
+            gap: 32px;
+
+
+            &:nth-of-type(1) {
+                color: black;
+                background-color: #FFFFFF;
+                box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+
+            }
+        }
 
         .hitoue {
             display: flex;
@@ -299,9 +307,7 @@ ul {
             border-bottom: 1px solid #FFFFFF;
 
 
-            &:nth-of-type(1) {
-                border-bottom: 1px solid black;
-            }
+
         }
 
         .hitocard {
@@ -317,21 +323,7 @@ ul {
             }
         }
 
-        li {
-            background-color: #4F9CF9;
-            padding: 60px 40px;
-            border-radius: 10px;
-            gap: 32px;
 
-            &:nth-of-type(1) {
-                color: black;
-                background-color: #FFFFFF;
-
-
-                box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
-
-            }
-        }
 
     }
 
@@ -343,7 +335,7 @@ ul {
     background-color: #043873;
 
 
-    .trywhite_text {
+    .trywhite-text {
         text-align: center;
         gap: 40px;
         display: grid;
@@ -379,15 +371,15 @@ ul {
     }
 }
 
-.content_footer {
+.content-footer {
     display: flex;
     flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+    align-items: flex-start;
+    padding: 0px;
 
     gap: 100px;
 
-    .contentbox ul{
+    .contentbox ul {
         display: flex;
     }
 
