@@ -220,7 +220,7 @@ h2 {
   height: 661px;
 }
 
-/* === use as extension === */
+/* ===== use as extension ===== */
 .extension {
   background-color: #043873;
 }
@@ -244,42 +244,35 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-
-.use-as-extension-btn a,
-.use-as-extension-btn i {
+.extension .use-as-extension-btn a,
+.extension .use-as-extension-btn i {
   color: #FFFFFF;
 }
-
-.use-as-extension-btn i {
+.extension .use-as-extension-btn i {
   margin-left: 10px;
 }
-
-.use-as-extension-img {
+.extension .use-as-extension-img {
   width: 686px;
   height: 479px;
   background-color: #C4DEFD;
 }
 
-/* === Customise it to your needs === */
+/* ===== Customise it to your needs ===== */
 .needs {
   background-color: white;
 }
-
-.your-needs-text {
+.needs .your-needs-text {
   text-align: left;
   margin-left: 98px;
 }
-
-.your-needs-text h2 {
+.needs .your-needs-text h2 {
   font-size: 72px;
 }
-
-.your-needs-text p {
+.needs .your-needs-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-
-.your-needs-btn {
+.needs .your-needs-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -287,66 +280,62 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-
-.your-needs-btn a,
-.your-needs-btn i {
+.needs .your-needs-btn a,
+.needs .your-needs-btn i {
   color: #FFFFFF;
 }
-
-.your-needs-btn i {
+.needs .your-needs-btn i {
   margin-left: 10px;
 }
-
-.your-needs-img {
+.needs .your-needs-img {
   width: 806px;
   height: 535px;
   background-color: #C4DEFD;
 }
 
-/* === Choose Your Plan === */
-/* == box1 == */
+/* ===== Choose Your Plan ===== */
 .your-plan-text {
   text-align: center;
 }
-
 .your-plan-text h2 {
   font-size: 72px;
 }
-
 .your-plan-text p {
   font-size: 18px;
   margin-top: 24px;
 }
 
+/* == box1 == */
 .your-plan-box {
   display: flex;
   margin-top: 60px;
 }
-
-.plan-box1 {
+.your-plan-box .plan-box1,
+.your-plan-box .plan-box3 {
   border: solid 1px #FFE492;
   border-radius: 10px;
   padding: 40px 44px;
+  margin: 63.5px 0 63.5px;
 }
-
-.plan-box1 h3,
-.plan-box1 p {
+.your-plan-box .plan-box1 .plan-box1 h3,
+.your-plan-box .plan-box1 .plan-box3 h3 .plan-box1 p,
+.your-plan-box .plan-box1 .plan-box3 p,
+.your-plan-box .plan-box3 .plan-box1 h3,
+.your-plan-box .plan-box3 .plan-box3 h3 .plan-box1 p,
+.your-plan-box .plan-box3 .plan-box3 p {
   margin-top: 25px;
 }
-
-.your-plan img {
+.your-plan-box img {
   margin-top: 28px;
 }
-
-.plan-box1 p {
+.your-plan-box li p {
   margin-left: 19px;
 }
-
 .your-plan-box li {
   display: flex;
 }
-
-.your-plan-btn1 {
+.your-plan-box .your-plan-btn1,
+.your-plan-box .your-plan-btn1 {
   background-color: #FFFFFF;
   border: solid 1px #FFE492;
   padding: 16px 40px;
@@ -354,59 +343,23 @@ h2 {
   font-size: 16px;
   margin-top: 41px;
 }
-
-.your-plan-btn1 a {
+.your-plan-box .your-plan-btn1 a,
+.your-plan-box .your-plan-btn1 a {
   color: #212529;
 }
 
 /* == box2 == */
 .plan-box2 {
   background-color: #043873;
-}
-
-.your-plan-text {
-  text-align: center;
-}
-
-.your-plan-text h2 {
-  font-size: 72px;
-}
-
-.your-plan-text p {
-  font-size: 18px;
-  margin-top: 24px;
-}
-
-.your-plan-box {
-  display: flex;
-  margin-top: 60px;
-}
-
-.plan-box2 {
-  background-color: #043873;
   border: solid 1px #043873;
   border-radius: 10px;
   padding: 80px 44px;
 }
-
 .plan-box2 h3,
 .plan-box2 p {
   margin-top: 25px;
 }
-
-.your-plan img {
-  margin-top: 28px;
-}
-
-.plan-box2 p {
-  margin-left: 19px;
-}
-
-.your-plan-box li {
-  display: flex;
-}
-
-.your-plan-btn2 {
+.plan-box2 .your-plan-btn2 {
   background-color: #043873;
   border: solid 1px #FFE492;
   padding: 16px 40px;
@@ -414,63 +367,7 @@ h2 {
   font-size: 16px;
   margin-top: 41px;
 }
-
-.your-plan-btn2 a {
-  color: #212529;
-}
-
-/* == box3 == */
-.your-plan-text {
-  text-align: center;
-}
-
-.your-plan-text h2 {
-  font-size: 72px;
-}
-
-.your-plan-text p {
-  font-size: 18px;
-  margin-top: 24px;
-}
-
-.your-plan-box {
-  display: flex;
-  margin-top: 60px;
-}
-
-.plan-box3 {
-  border: solid 1px #FFE492;
-  border-radius: 10px;
-  padding: 40px 44px;
-}
-
-.plan-box3 h3,
-.plan-box3 p {
-  margin-top: 25px;
-}
-
-.your-plan img {
-  margin-top: 28px;
-}
-
-.plan-box3 p {
-  margin-left: 19px;
-}
-
-.your-plan-box li {
-  display: flex;
-}
-
-.your-plan-btn3 {
-  background-color: #FFFFFF;
-  border: solid 1px #FFE492;
-  padding: 16px 40px;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-top: 41px;
-}
-
-.your-plan-btn3 a {
+.plan-box2 .your-plan-btn2 a {
   color: #212529;
 }
 
