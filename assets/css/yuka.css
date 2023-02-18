@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -20,9 +21,9 @@ h2 {
   margin: 0 auto;
 }
 
-
 /* // ===== ヘッダー ===== */
 .header,
+.header-list,
 .header-right ul,
 .header-right,
 .header-btn {
@@ -44,9 +45,6 @@ h2 {
 }
 .header .header-right ul {
   margin: 16px 0px;
-}
-.header .header-right li {
-  list-style: none;
 }
 .header .header-right i {
   margin-left: 10px;
@@ -86,20 +84,17 @@ h2 {
   color: #FFFFFF;
 }
 
-
-
-/* メイン */
-
+/* ===== メイン ===== */
 .get-more-done,
 .project-management,
-.use-as-extension{
+.use-as-extension {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
 .work-together,
-.your-needs{
+.your-needs {
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
@@ -109,7 +104,7 @@ h2 {
 .project,
 .extension,
 .needs,
-.your-plan{
+.your-plan {
   padding: 140px 0 140px;
 }
 
@@ -117,38 +112,29 @@ h2 {
 .project-management,
 .work-together,
 .use-as-extension,
-.your-needs{
+.your-needs {
   align-items: center;
 }
 
-
-/* === get more done === */
-.get_more{
+/* ===== get more done ===== */
+.get_more {
   background-image: url(/yuka.img/Element.png);
   background-repeat: no-repeat;
   position: relative;
   background-color: #043873;
 }
-
-
-
-
-.get-more-done-text{
+.get_more .get-more-done-text {
   text-align: left;
 }
-  .get-more-done-text h2{
+.get_more .get-more-done-text h2 {
   font-size: 64px;
 }
-.get-more-done-text p{
+.get_more .get-more-done-text p {
   color: #FFFFFF;
   margin-top: 24px;
   font-size: 18px;
 }
-  .get-more-done img{
-  /* width: 954px;
-  height: 600px;  */
-}
-.get-more-done-btn{
+.get_more .get-more-done-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px;
@@ -156,34 +142,32 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-.get-more-done-btn a,
-.get-more-done-btn i{
+.get_more .get-more-done-btn a,
+.get_more .get-more-done-btn i {
   color: #FFFFFF;
 }
-.get-more-done-btn i{
+.get_more .get-more-done-btn i {
   margin-left: 10px;
 }
 
-
-/* === project-management === */
-.project{
+/* ===== project-management ===== */
+.project {
   background-color: white;
   background-image: url(/yuka.img/BACKGROUND.png);
   background-repeat: no-repeat;
   position: relative;
 }
-.project-management-text{
+.project .project-management-text {
   text-align: left;
 }
-
-.project-management-text h2{
+.project .project-management-text h2 {
   font-size: 72px;
 }
-.project-management-text p{
+.project .project-management-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-.project-management-btn{
+.project .project-management-text .project-management-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -191,31 +175,31 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-.project-management-btn a,
-.project-management-btn i{
+.project .project-management-text .project-management-btn a,
+.project .project-management-text .project-management-btn i {
   color: #FFFFFF;
 }
-.project-management-btn i{
+.project .project-management-text .project-management-btn i {
   margin-left: 10px;
 }
-.project-management-img{
+.project .project-management-text .project-management-img {
   width: 748px;
   height: 547px;
 }
 
 /* === work together ===*/
-.work-together-text{
+.work-together-text {
   text-align: left;
   margin-left: 100px;
 }
-.work-together-text h2{
+.work-together-text .work-together-text h2 {
   font-size: 72px;
 }
-.work-together-text p{
+.work-together-text .work-together-text h2 p {
   font-size: 18px;
   margin-top: 24px;
 }
-.work-together-btn{
+.work-together-text .work-together-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -223,36 +207,40 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-.work-together-btn a,
-.work-together-btn i{
+.work-together-text .work-together-btn a,
+.work-together-text .work-together-btn i {
   color: #FFFFFF;
 }
-.work-together-btn i{
+.work-together-text .work-together-btn i {
   margin-left: 10px;
 }
-.work-together-img{
+
+.work-together-img {
   width: 710px;
   height: 661px;
 }
 
 /* === use as extension === */
-.extension{
+.extension {
   background-color: #043873;
 }
-.use-as-extension-text{
+
+.use-as-extension-text {
   text-align: left;
 }
-.use-as-extension-text h2{
+
+.use-as-extension-text h2 {
   font-size: 72px;
   color: #FFFFFF;
-
 }
-.use-as-extension-text p{
+
+.use-as-extension-text p {
   font-size: 18px;
   margin-top: 24px;
   color: #FFFFFF;
 }
-.use-as-extension-btn{
+
+.use-as-extension-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -260,37 +248,42 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
+
 .use-as-extension-btn a,
-.use-as-extension-btn i{
+.use-as-extension-btn i {
   color: #FFFFFF;
 }
-.use-as-extension-btn i{
+
+.use-as-extension-btn i {
   margin-left: 10px;
 }
 
-.use-as-extension-img{
+.use-as-extension-img {
   width: 686px;
   height: 479px;
   background-color: #C4DEFD;
 }
 
-
 /* === Customise it to your needs === */
-.needs{
+.needs {
   background-color: white;
 }
-.your-needs-text{
+
+.your-needs-text {
   text-align: left;
   margin-left: 98px;
 }
-.your-needs-text h2{
+
+.your-needs-text h2 {
   font-size: 72px;
 }
-.your-needs-text p{
+
+.your-needs-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-.your-needs-btn{
+
+.your-needs-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -298,58 +291,66 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
+
 .your-needs-btn a,
-.your-needs-btn i{
+.your-needs-btn i {
   color: #FFFFFF;
 }
-.your-needs-btn i{
+
+.your-needs-btn i {
   margin-left: 10px;
 }
-.your-needs-img{
+
+.your-needs-img {
   width: 806px;
   height: 535px;
   background-color: #C4DEFD;
 }
 
-
-
 /* === Choose Your Plan === */
 /* == box1 == */
-.your-plan{
-}
-.your-plan-text{
+.your-plan-text {
   text-align: center;
 }
-.your-plan-text h2{
+
+.your-plan-text h2 {
   font-size: 72px;
 }
-.your-plan-text p{
+
+.your-plan-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-.your-plan-box{
+
+.your-plan-box {
   display: flex;
   margin-top: 60px;
 }
-.plan-box1{
+
+.plan-box1 {
   border: solid 1px #FFE492;
   border-radius: 10px;
   padding: 40px 44px;
 }
+
 .plan-box1 h3,
-.plan-box1 p{
+.plan-box1 p {
   margin-top: 25px;
 }
-.your-plan img{
+
+.your-plan img {
   margin-top: 28px;
 }
-.plan-box1 p{
+
+.plan-box1 p {
   margin-left: 19px;
 }
-.your-plan-box li{
+
+.your-plan-box li {
   display: flex;
 }
-.your-plan-btn1{
+
+.your-plan-btn1 {
   background-color: #FFFFFF;
   border: solid 1px #FFE492;
   padding: 16px 40px;
@@ -357,48 +358,59 @@ h2 {
   font-size: 16px;
   margin-top: 41px;
 }
-.your-plan-btn1 a{
+
+.your-plan-btn1 a {
   color: #212529;
 }
 
 /* == box2 == */
-.plan-box2{
+.plan-box2 {
   background-color: #043873;
 }
-.your-plan-text{
+
+.your-plan-text {
   text-align: center;
 }
-.your-plan-text h2{
+
+.your-plan-text h2 {
   font-size: 72px;
 }
-.your-plan-text p{
+
+.your-plan-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-.your-plan-box{
+
+.your-plan-box {
   display: flex;
   margin-top: 60px;
 }
-.plan-box2{
+
+.plan-box2 {
   background-color: #043873;
   border: solid 1px #043873;
   border-radius: 10px;
   padding: 80px 44px;
 }
+
 .plan-box2 h3,
-.plan-box2 p{
+.plan-box2 p {
   margin-top: 25px;
 }
-.your-plan img{
+
+.your-plan img {
   margin-top: 28px;
 }
-.plan-box2 p{
+
+.plan-box2 p {
   margin-left: 19px;
 }
-.your-plan-box li{
+
+.your-plan-box li {
   display: flex;
 }
-.your-plan-btn2{
+
+.your-plan-btn2 {
   background-color: #043873;
   border: solid 1px #FFE492;
   padding: 16px 40px;
@@ -406,44 +418,54 @@ h2 {
   font-size: 16px;
   margin-top: 41px;
 }
-.your-plan-btn2 a{
+
+.your-plan-btn2 a {
   color: #212529;
 }
 
 /* == box3 == */
-.your-plan-text{
+.your-plan-text {
   text-align: center;
 }
-.your-plan-text h2{
+
+.your-plan-text h2 {
   font-size: 72px;
 }
-.your-plan-text p{
+
+.your-plan-text p {
   font-size: 18px;
   margin-top: 24px;
 }
-.your-plan-box{
+
+.your-plan-box {
   display: flex;
   margin-top: 60px;
 }
-.plan-box3{
+
+.plan-box3 {
   border: solid 1px #FFE492;
   border-radius: 10px;
   padding: 40px 44px;
 }
+
 .plan-box3 h3,
-.plan-box3 p{
+.plan-box3 p {
   margin-top: 25px;
 }
-.your-plan img{
+
+.your-plan img {
   margin-top: 28px;
 }
-.plan-box3 p{
+
+.plan-box3 p {
   margin-left: 19px;
 }
-.your-plan-box li{
+
+.your-plan-box li {
   display: flex;
 }
-.your-plan-btn3{
+
+.your-plan-btn3 {
   background-color: #FFFFFF;
   border: solid 1px #FFE492;
   padding: 16px 40px;
@@ -451,17 +473,9 @@ h2 {
   font-size: 16px;
   margin-top: 41px;
 }
-.your-plan-btn3 a{
+
+.your-plan-btn3 a {
   color: #212529;
 }
 
-
-
-
-
-
-
-
-
-
-/*# sourceMappingURL=yuka.css.map */
+/*# sourceMappingURL=yuka.css.map *//*# sourceMappingURL=yuka.css.map */
