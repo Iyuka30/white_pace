@@ -29,24 +29,32 @@ h2 {
 .header-btn {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
 
 .header {
   margin: 0 auto;
   height: 92px;
-  align-items: center;
   color: #FFFFFF;
   background-color: #043873;
 }
-.header .header-text {
+.header .header-list {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.header .header-left img {
+  margin: 29px 0 29px;
+}
+.header .header-right {
+  margin: 16px 0px;
+}
+.header .header-right .header-text {
   color: #FFFFFF;
   font-size: 18px;
   margin-left: 32px;
 }
-.header .header-right ul {
-  margin: 16px 0px;
-}
-.header .header-right i {
+.header .header-right .header-right i {
   margin-left: 10px;
 }
 
@@ -103,8 +111,7 @@ h2 {
 .get_more,
 .project,
 .extension,
-.needs,
-.your-plan {
+.needs {
   padding: 140px 0 140px;
 }
 
@@ -116,11 +123,16 @@ h2 {
   align-items: center;
 }
 
+.get-more-done-text h2,
+.use-as-extension-text h2 {
+  color: #FFFFFF;
+}
+
 /* ===== get more done ===== */
 .get_more {
   background-image: url(/yuka.img/Element.png);
   background-repeat: no-repeat;
-  position: relative;
+  background-position: 0% 65%;
   background-color: #043873;
 }
 .get_more .get-more-done-text {
@@ -155,10 +167,11 @@ h2 {
   background-color: white;
   background-image: url(/yuka.img/BACKGROUND.png);
   background-repeat: no-repeat;
-  position: relative;
+  background-position: 0% 24%;
 }
 .project .project-management-text {
   text-align: left;
+  margin-right: 60px;
 }
 .project .project-management-text h2 {
   font-size: 72px;
@@ -188,18 +201,21 @@ h2 {
 }
 
 /* === work together ===*/
-.work-together-text {
+.work-together {
+  margin-top: 100px;
+}
+.work-together .work-together-text {
   text-align: left;
   margin-left: 100px;
 }
-.work-together-text .work-together-text h2 {
+.work-together .work-together-text .work-together-text h2 {
   font-size: 72px;
 }
-.work-together-text .work-together-text h2 p {
+.work-together .work-together-text .work-together-text h2 p {
   font-size: 18px;
   margin-top: 24px;
 }
-.work-together-text .work-together-btn {
+.work-together .work-together-text .work-together-btn {
   background-color: #4F9CF9;
   border: none;
   padding: 20px 40px;
@@ -207,11 +223,11 @@ h2 {
   font-size: 18px;
   margin-top: 60px;
 }
-.work-together-text .work-together-btn a,
-.work-together-text .work-together-btn i {
+.work-together .work-together-text .work-together-btn a,
+.work-together .work-together-text .work-together-btn i {
   color: #FFFFFF;
 }
-.work-together-text .work-together-btn i {
+.work-together .work-together-text .work-together-btn i {
   margin-left: 10px;
 }
 
@@ -226,10 +242,10 @@ h2 {
 }
 .extension .use-as-extension-text {
   text-align: left;
+  margin-right: 98px;
 }
 .extension .use-as-extension-text h2 {
   font-size: 72px;
-  color: #FFFFFF;
 }
 .extension .use-as-extension-text p {
   font-size: 18px;
@@ -294,6 +310,10 @@ h2 {
 }
 
 /* ===== Choose Your Plan ===== */
+.your-plan {
+  padding-top: 140px;
+}
+
 .your-plan-text {
   text-align: center;
 }
@@ -317,34 +337,32 @@ h2 {
   padding: 40px 44px;
   margin: 63.5px 0 63.5px;
 }
-.your-plan-box .plan-box1 .plan-box1 h3,
-.your-plan-box .plan-box1 .plan-box3 h3 .plan-box1 p,
-.your-plan-box .plan-box1 .plan-box3 p,
-.your-plan-box .plan-box3 .plan-box1 h3,
-.your-plan-box .plan-box3 .plan-box3 h3 .plan-box1 p,
-.your-plan-box .plan-box3 .plan-box3 p {
-  margin-top: 25px;
+.your-plan-box .plan-box1 h3,
+.your-plan-box .plan-box3 h3 {
+  font-size: 36px;
+  margin: 25px 0 25px;
 }
 .your-plan-box img {
-  margin-top: 28px;
+  align-self: flex-start;
 }
 .your-plan-box li p {
   margin-left: 19px;
 }
 .your-plan-box li {
   display: flex;
+  margin-top: 28px;
 }
 .your-plan-box .your-plan-btn1,
-.your-plan-box .your-plan-btn1 {
+.your-plan-box .your-plan-btn3 {
   background-color: #FFFFFF;
   border: solid 1px #FFE492;
   padding: 16px 40px;
   border-radius: 8px;
   font-size: 16px;
-  margin-top: 41px;
+  margin-top: 25px;
 }
 .your-plan-box .your-plan-btn1 a,
-.your-plan-box .your-plan-btn1 a {
+.your-plan-box .your-plan-btn3 a {
   color: #212529;
 }
 
@@ -354,21 +372,23 @@ h2 {
   border: solid 1px #043873;
   border-radius: 10px;
   padding: 80px 44px;
+  color: #FFFFFF;
 }
-.plan-box2 h3,
-.plan-box2 p {
-  margin-top: 25px;
+.plan-box2 h3 {
+  font-size: 36px;
+  margin: 25px 0 25px;
+  color: #FFE492;
 }
 .plan-box2 .your-plan-btn2 {
-  background-color: #043873;
-  border: solid 1px #FFE492;
-  padding: 16px 40px;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-top: 41px;
+  background-color: #4F9CF9;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-top: 25px;
 }
 .plan-box2 .your-plan-btn2 a {
-  color: #212529;
+  color: #FFE492;
 }
 
 /*# sourceMappingURL=yuka.css.map *//*# sourceMappingURL=yuka.css.map */
