@@ -46,11 +46,11 @@ section {
     img {
         position: absolute;
         width: 38%;
-        top: -181px;
         left: -111px;
+        top: -170px;
     }
-
 }
+
 
 .your-work-text {
     text-align: center;
@@ -93,6 +93,7 @@ section {
     line-height: 63px;
     border-radius: 8px;
     text-align: center;
+    margin-top: 60px;
 
 
     &:hover {
@@ -107,54 +108,50 @@ section {
 
 // underline===============================
 
-.underline {
-    position: relative;
+// .underline {
+//     position: relative;
 
-    &::before {
-        content: "";
-        background-image: url(../../img/yellowline.png);
-        background-size: contain;
-        position: absolute;
-        display: inline-block;
-        vertical-align: middle;
-        z-index: -1;
-        top: 65px;
-        width: 50%;
-        height: 60%;
-        background-repeat: no-repeat;
-        right: 80px;
-    }
-}
+//     &::before {
+//         content: "";
+//         background-image: url(../../img/yellowline.png);
+//         background-size: contain;
+//         position: absolute;
+//         display: inline-block;
+//         vertical-align: middle;
+//         z-index: -1;
+//         top: 65px;
+//         width: 50%;
+//         height: 60%;
+//         background-repeat: no-repeat;
+//         right: 80px;
+//     }
+// }
 
-.underlineb {
-    position: relative;
-    white-space: nowrap;
-    color: #FFFFFF;
-    // position: relative;
+// .underlineb {
+//     position: relative;
+//     white-space: nowrap;
+//     color: #FFFFFF;
+//     // position: relative;
 
-    &::before {
+//     &::before {
 
-        content: "";
-        background-image: url(../../img/blueline.png);
-        background-size: contain;
-        position: absolute;
-        display: inline-block;
-        vertical-align: middle;
-        z-index: 0;
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        top: 65px;
-        width: 50%;
-        height: 60%;
-        background-repeat: no-repeat;
-        right: 80px;
-
-
-
-    }
-
-}
+//         content: "";
+//         background-image: url(../../img/blueline.png);
+//         background-size: contain;
+//         position: absolute;
+//         display: inline-block;
+//         vertical-align: middle;
+//         z-index: 0;
+//         flex: none;
+//         order: 0;
+//         flex-grow: 0;
+//         top: 65px;
+//         width: 50%;
+//         height: 60%;
+//         background-repeat: no-repeat;
+//         right: 80px;
+//     }
+// }
 
 
 
@@ -167,8 +164,18 @@ section {
     align-items: center;
     height: 661px;
 
+    h2 {
+        line-height: 87px;
+        white-space: nowrap;
+    }
+
     .your-date-textbox {
         width: 50%;
+        background-image: url(../../img/yellowline.png);
+        background-position: 0% 30%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+
 
         .img-wrappe {
             width: 50%;
@@ -194,7 +201,7 @@ p {
     height: 538px;
     text-align: center;
 
-    .sponsor {
+    .underline {
         position: relative;
 
         &::before {
@@ -214,51 +221,44 @@ p {
 
     }
 
-    // span {
-    //     position: absolute;
-    //     background-image: url(../img/yellowline.png);
-    // }
-
-
-
-    // .lineimg {
-    //     position: absolute;
-    //     right: 165px;
-    //     position: absolute;
-    //     top: 64px;
-    //     z-index: -1;
-    // }
-
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
 }
-
-
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 100px;
-}
-
 
 // Work with Your Favorite Apps Using whitepace
 
 
 .apps {
     background-color: #043873;
+    background-image: url(../../img/Element.back.png);
+    background-repeat: no-repeat;
+    background-position: 19% 50%;
 
 
     .apps-using {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        flex-direction: row;
+        align-items: flex-start;
         gap: 100px;
 
         .img-wrappe {
             width: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 
     .apps-textbox {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         width: 50%;
 
         h2,
@@ -273,8 +273,14 @@ ul {
 // slider
 
 .clients-says {
+    background-image: url(../../img/yellowline.png);
+    background-position: 91% 17%;
+    background-repeat: no-repeat;
+
     h2 {
         text-align: center;
+        line-height: 1;
+
     }
 
 
@@ -282,6 +288,7 @@ ul {
         display: flex;
         justify-content: space-between;
         gap: 32px;
+        padding: 60px 0 60px;
 
         li {
             background-color: #4F9CF9;
@@ -351,6 +358,7 @@ ul {
             color: #FFFFFF;
             font-size: 72px;
             font-weight: 700;
+            line-height: 1;
         }
 
         p {
@@ -381,6 +389,8 @@ ul {
 
     .contentbox ul {
         display: flex;
+        flex-direction: column;
+
     }
 
     h4 {
