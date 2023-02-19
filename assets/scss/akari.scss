@@ -46,7 +46,7 @@ a {
     color: #FFFFFF;
 }
 
-i{
+i {
     color: #FFFFFF;
 }
 
@@ -57,8 +57,8 @@ i{
     flex-direction: column;
     align-items: center;
     background-color: #043873;
-    height: 574px;
     position: relative;
+    z-index: 0;
 
     img {
         position: absolute;
@@ -83,12 +83,33 @@ i{
         gap: 24px;
     }
 
-    .text {
-        font-size: 18px;
-        color: #FFFFFF;
-        align-self: stretch;
+    span {
+        position: relative;
+
+      &::before {
+            content: "";
+            background-image: url(../../img/blueline.png);
+            background-size: contain;
+            position: absolute;
+            display: inline-block;
+            vertical-align: middle;
+            z-index: -1;
+            top: 58px;
+            width: 350px;
+            height: 100%;
+            background-repeat: no-repeat;
+            right: -40px;
+        }
     }
+
 }
+
+.text {
+    font-size: 18px;
+    color: #FFFFFF;
+    align-self: stretch;
+}
+
 
 // btn ======================================
 
@@ -121,54 +142,24 @@ i{
 
 // underline===============================
 
-// .underline {
-//     position: relative;
+span {
+    position: relative;
 
-//     &::before {
-//         content: "";
-//         background-image: url(../../img/yellowline.png);
-//         background-size: contain;
-//         position: absolute;
-//         display: inline-block;
-//         vertical-align: middle;
-//         z-index: -1;
-//         top: 65px;
-//         width: 50%;
-//         height: 60%;
-//         background-repeat: no-repeat;
-//         right: 80px;
-//     }
-// }
-
-// .underlineb {
-//     position: relative;
-//     white-space: nowrap;
-//     color: #FFFFFF;
-//     // position: relative;
-
-//     &::before {
-
-//         content: "";
-//         background-image: url(../../img/blueline.png);
-//         background-size: contain;
-//         position: absolute;
-//         display: inline-block;
-//         vertical-align: middle;
-//         z-index: 0;
-//         flex: none;
-//         order: 0;
-//         flex-grow: 0;
-//         top: 65px;
-//         width: 50%;
-//         height: 60%;
-//         background-repeat: no-repeat;
-//         right: 80px;
-//     }
-// }
-
-
-
-
+    &::before {
+        content: "";
+        background-image: url(../../img/yellowline.png);
+        background-size: contain;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        z-index: -1;
+        top: 33px;
+        width: 300px;
+        height: 100%;
+        background-repeat: no-repeat;
+        right: -189px;
+    }
+}
 
 // youedate=================================
 
@@ -184,10 +175,10 @@ i{
 
     .your-date-textbox {
         width: 50%;
-        background-image: url(../../img/yellowline.png);
-        background-position: 0% 30%;
-        background-repeat: no-repeat;
-        object-fit: cover;
+        // background-image: url(../../img/yellowline.png);
+        // background-position: 100% 25%;
+        // background-repeat: no-repeat;
+        // object-fit: cover;
 
 
         .img-wrappe {
@@ -208,10 +199,9 @@ p {
 // Oursponsors =====================================================
 
 .Oursponsors {
-    height: 538px;
     text-align: center;
 
-    .underline {
+    span {
         position: relative;
 
         &::before {
@@ -222,13 +212,12 @@ p {
             display: inline-block;
             vertical-align: middle;
             z-index: -1;
-            top: 65px;
-            width: 50%;
-            height: 60%;
+            top: 33px;
+            width: 300px;
+            height: 100%;
             background-repeat: no-repeat;
-            right: 80px;
+            right: 10px;
         }
-
     }
 
     ul {
@@ -236,7 +225,11 @@ p {
         justify-content: space-around;
         margin-top: 100px;
     }
+
+
 }
+
+
 
 // Work with Your Favorite Apps Using whitepace============
 
@@ -257,18 +250,21 @@ p {
         .img-wrappe {
             width: 50%;
             height: 470px;
+            order: 1;
+            flex-grow: 0;
         }
     }
 
     .apps-textbox {
         width: 50%;
-        height: 470px;
-    
+        order: 2;
+        flex-grow: 1;
+
 
         p {
             color: #FFFFFF;
             letter-spacing: -0.02em;
-            padding:24px 0 60px;
+            padding: 24px 0 60px;
         }
     }
 }
@@ -277,80 +273,96 @@ p {
 // slider==================================================
 
 .clients-says {
-    background-image: url(../../img/yellowline.png);
-    background-position: 88% 18%;
-    background-repeat: no-repeat;
-    background-size: 19%;
 
     h2 {
         text-align: center;
         line-height: 1;
 
-    }
+        span {
+            position: relative;
 
-
-    .clients-card {
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        padding: 60px 0 60px;
-
-        .box {
-            background-color: #4F9CF9;
-            padding: 60px 40px;
-            border-radius: 10px;
-            gap: 32px;
-            color: #FFFFFF;
-
-            .hitoname h3 {
-                color: #043873;
-            }
-
-
-            &:nth-of-type(1) {
-                color: black;
-                background-color: #FFFFFF;
-                box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
-
-                h3 {
-                    color: black;
-                }
-
-                .hitoue {
-                    border-bottom: 1px solid black;
-                }
-            }
-        }
-
-        .hitoue {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 0px 0px 40px;
-            gap: 32px;
-            border-bottom: 1px solid #FFFFFF;
-        }
-
-        .hitocard {
-            padding: 0px;
-
-            display: flex;
-            flex-direction: row;
-            align-items: flex-end;
-            margin-top: 60px;
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-
-            .hitoname h3 {
-                font-weight: 600;
-                font-size: 24px;
-                line-height: 36px;
+            &::before {
+                content: "";
+                background-image: url(../../img/yellowline.png);
+                background-size: contain;
+                position: absolute;
+                display: inline-block;
+                vertical-align: middle;
+                z-index: -1;
+                top: 25px;
+                width: 250px;
+                height: 100%;
+                background-repeat: no-repeat;
+                right: -55px;
             }
         }
     }
 }
+
+
+.clients-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 60px 0 60px;
+
+    .box {
+        background-color: #4F9CF9;
+        padding: 60px 40px;
+        border-radius: 10px;
+        gap: 32px;
+        color: #FFFFFF;
+
+        .hitoname h3 {
+            color: #043873;
+        }
+
+
+        &:nth-of-type(1) {
+            color: black;
+            background-color: #FFFFFF;
+            box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
+
+            h3 {
+                color: black;
+            }
+
+            .hitoue {
+                border-bottom: 1px solid black;
+            }
+        }
+    }
+
+    .hitoue {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 40px;
+        gap: 32px;
+        border-bottom: 1px solid #FFFFFF;
+    }
+
+    .hitocard {
+        padding: 0px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 60px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+
+        .hitoname h3 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+
 
 // tyr whitepace===========================================
 
@@ -397,15 +409,14 @@ p {
     gap: 100px;
 
     .contentbox {
-
-        display: grid;
-        gap: 15px;
+        width: 205px;
     }
 
     ul {
         display: flex;
         flex-direction: column;
         gap: 15px;
+        margin-top: 15px;
 
     }
 
@@ -446,3 +457,88 @@ p {
 
 
 // 767px 　：スマホ表示 
+
+@media screen and (max-width:767px) {
+
+    .wrapper {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .your-date {
+        display: inline-block;
+
+        .your-date-textbox {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+
+    .btn {
+        margin: 60px;
+    }
+
+
+    .Oursponsors {
+        ul {
+            display: block;
+        }
+
+        li {
+            padding-bottom: 50px;
+        }
+    }
+
+    .apps .apps-using {
+        flex-direction: column-reverse;
+
+        .apps-textbox,
+        .img-wrappe {
+            width: auto;
+        }
+
+        .apps-textbox {
+            text-align: center;
+        }
+    }
+
+    .clients-card {
+        .hitocard{
+            display: block;
+        }
+        .box {
+            &:not(:first-child) {
+                display: none;
+            }
+        }
+    }
+
+    .content-footer {
+        display: flex;
+        margin-bottom: 100px;
+        gap: 100px;
+        flex-direction: column;
+        align-items: center;
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+    }
+
+
+
+
+
+}

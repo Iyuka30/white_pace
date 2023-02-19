@@ -48,8 +48,8 @@ i {
   flex-direction: column;
   align-items: center;
   background-color: #043873;
-  height: 574px;
   position: relative;
+  z-index: 0;
 }
 .your-work img {
   position: absolute;
@@ -71,7 +71,25 @@ i {
   padding: 0px;
   gap: 24px;
 }
-.your-work-text .text {
+.your-work-text span {
+  position: relative;
+}
+.your-work-text span::before {
+  content: "";
+  background-image: url(../../img/blueline.png);
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: -1;
+  top: 58px;
+  width: 350px;
+  height: 100%;
+  background-repeat: no-repeat;
+  right: -40px;
+}
+
+.text {
   font-size: 18px;
   color: #FFFFFF;
   align-self: stretch;
@@ -102,6 +120,24 @@ i {
   opacity: 0.7;
 }
 
+span {
+  position: relative;
+}
+span::before {
+  content: "";
+  background-image: url(../../img/yellowline.png);
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: -1;
+  top: 33px;
+  width: 300px;
+  height: 100%;
+  background-repeat: no-repeat;
+  right: -189px;
+}
+
 .your-date {
   display: flex;
   align-items: center;
@@ -113,10 +149,6 @@ i {
 }
 .your-date .your-date-textbox {
   width: 50%;
-  background-image: url(../../img/yellowline.png);
-  background-position: 0% 30%;
-  background-repeat: no-repeat;
-  object-fit: cover;
 }
 .your-date .your-date-textbox .img-wrappe {
   width: 50%;
@@ -127,13 +159,12 @@ p {
 }
 
 .Oursponsors {
-  height: 538px;
   text-align: center;
 }
-.Oursponsors .underline {
+.Oursponsors span {
   position: relative;
 }
-.Oursponsors .underline::before {
+.Oursponsors span::before {
   content: "";
   background-image: url(../../img/yellowline.png);
   background-size: contain;
@@ -141,11 +172,11 @@ p {
   display: inline-block;
   vertical-align: middle;
   z-index: -1;
-  top: 65px;
-  width: 50%;
-  height: 60%;
+  top: 33px;
+  width: 300px;
+  height: 100%;
   background-repeat: no-repeat;
-  right: 80px;
+  right: 10px;
 }
 .Oursponsors ul {
   display: flex;
@@ -168,10 +199,13 @@ p {
 .apps .apps-using .img-wrappe {
   width: 50%;
   height: 470px;
+  order: 1;
+  flex-grow: 0;
 }
 .apps .apps-textbox {
   width: 50%;
-  height: 470px;
+  order: 2;
+  flex-grow: 1;
 }
 .apps .apps-textbox p {
   color: #FFFFFF;
@@ -179,44 +213,56 @@ p {
   padding: 24px 0 60px;
 }
 
-.clients-says {
-  background-image: url(../../img/yellowline.png);
-  background-position: 88% 18%;
-  background-repeat: no-repeat;
-  background-size: 19%;
-}
 .clients-says h2 {
   text-align: center;
   line-height: 1;
 }
-.clients-says .clients-card {
+.clients-says h2 span {
+  position: relative;
+}
+.clients-says h2 span::before {
+  content: "";
+  background-image: url(../../img/yellowline.png);
+  background-size: contain;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: -1;
+  top: 25px;
+  width: 250px;
+  height: 100%;
+  background-repeat: no-repeat;
+  right: -55px;
+}
+
+.clients-card {
   display: flex;
   justify-content: space-between;
   gap: 32px;
   padding: 60px 0 60px;
 }
-.clients-says .clients-card .box {
+.clients-card .box {
   background-color: #4F9CF9;
   padding: 60px 40px;
   border-radius: 10px;
   gap: 32px;
   color: #FFFFFF;
 }
-.clients-says .clients-card .box .hitoname h3 {
+.clients-card .box .hitoname h3 {
   color: #043873;
 }
-.clients-says .clients-card .box:nth-of-type(1) {
+.clients-card .box:nth-of-type(1) {
   color: black;
   background-color: #FFFFFF;
   box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
 }
-.clients-says .clients-card .box:nth-of-type(1) h3 {
+.clients-card .box:nth-of-type(1) h3 {
   color: black;
 }
-.clients-says .clients-card .box:nth-of-type(1) .hitoue {
+.clients-card .box:nth-of-type(1) .hitoue {
   border-bottom: 1px solid black;
 }
-.clients-says .clients-card .hitoue {
+.clients-card .hitoue {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -224,7 +270,7 @@ p {
   gap: 32px;
   border-bottom: 1px solid #FFFFFF;
 }
-.clients-says .clients-card .hitocard {
+.clients-card .hitocard {
   padding: 0px;
   display: flex;
   flex-direction: row;
@@ -234,7 +280,7 @@ p {
   order: 1;
   flex-grow: 0;
 }
-.clients-says .clients-card .hitocard .hitoname h3 {
+.clients-card .hitocard .hitoname h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 36px;
@@ -276,13 +322,13 @@ p {
   gap: 100px;
 }
 .content-footer .contentbox {
-  display: grid;
-  gap: 15px;
+  width: 205px;
 }
 .content-footer ul {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 15px;
 }
 .content-footer h4 {
   color: #FFFFFF;
@@ -311,4 +357,62 @@ p {
 .footer .icons {
   gap: 32px;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 100%;
+    margin: 100px auto;
+  }
+  .your-date {
+    display: inline-block;
+  }
+  .your-date .your-date-textbox {
+    width: 100%;
+    text-align: center;
+  }
+  .btn {
+    margin: 60px;
+  }
+  .Oursponsors ul {
+    display: block;
+  }
+  .Oursponsors li {
+    padding-bottom: 50px;
+  }
+  .apps .apps-using {
+    flex-direction: column-reverse;
+  }
+  .apps .apps-using .apps-textbox,
+  .apps .apps-using .img-wrappe {
+    width: auto;
+  }
+  .apps .apps-using .apps-textbox {
+    text-align: center;
+  }
+  .clients-card .hitocard {
+    display: block;
+  }
+  .clients-card .box:not(:first-child) {
+    display: none;
+  }
+  .content-footer {
+    display: flex;
+    margin-bottom: 100px;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-footer .btn {
+    margin: 0 auto;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=akari.css.map */
