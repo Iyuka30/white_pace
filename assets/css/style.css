@@ -143,7 +143,7 @@ i {
 
 /* ===== get more done ===== */
 .get_more {
-  background-image: url(/yuka.img/Element.png);
+  background-image: url(../../yuka.img/Element.png);
   background-repeat: no-repeat;
   background-position: 0% 65%;
   background-color: #043873;
@@ -178,7 +178,7 @@ i {
 /* ===== project-management ===== */
 .project {
   background-color: white;
-  background-image: url(/yuka.img/BACKGROUND.png);
+  background-image: url(../../yuka.img/BACKGROUND.png);
   background-repeat: no-repeat;
   background-position: 0% 24%;
 }
