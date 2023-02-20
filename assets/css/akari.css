@@ -286,6 +286,26 @@ p {
   line-height: 36px;
 }
 
+#mark ul {
+  display: flex;
+  justify-content: center;
+}
+#mark ul li {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#mark ul a {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #a4a2a2;
+  display: block;
+  text-indent: -9999px;
+}
+#mark .current {
+  background-color: #333333;
+}
+
 .trywhite {
   background-color: #043873;
 }

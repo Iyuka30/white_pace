@@ -363,6 +363,33 @@ p {
 }
 
 
+#mark {
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li{
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        a {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #a4a2a2;
+            display: block;
+            text-indent: -9999px;
+        }
+    }
+
+    .current{
+        background-color: #333333;
+    }
+}
+
+
 
 // tyr whitepace===========================================
 
